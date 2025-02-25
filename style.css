@@ -1,10 +1,141 @@
 h2{
     color:red;
+    margin: 0;
+    font-size: 18px;
 }
 .highlight{
-    border:solid;
+    text-align:center;
 }
 #profile{
-    border:solid;
-    border-color:blue;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+#profile_info{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 15vw;
+}
+.my-button {
+    appearance: none; /* 기본 스타일 초기화 */
+    height: 30px; /* px 단위로 변경 */
+    width: 200px; /* px 단위로 변경 */
+    font-size: 12px; /* 적절한 크기로 조절 */
+    background-color: rgb(220, 220, 220); /* solid 생략 가능 */
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+.thumbnail_gird{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.thumbnail{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+#stat_bar{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+
+    margin-bottom:5px;
+    margin-top:5px;
+}
+.stat{
+    text-align:center;
+}
+.circle_pic{
+    border: solid white 1px;
+    border-radius: 50%;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile_pic{
+    width: 15vw;
+    height: 15vw;
+}
+.highlight_pic{
+    width: 10vw;
+    height: 10vw;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+#highlight_area{
+    display: grid;
+    grid-template-columns: 12vw 12vw 1fr;
+}
+#id{
+    font-size: 6vw;
+    font-weight: 100;
+}
+button{
+    height: 80%;
+    width: 95%;
+
+    font-size:3vw;
+    background-color:white;
+    border: solid gray 1px;
+    border-radius: 3px;
+}
+#top{
+    display:grid;
+    grid-template-columns: 4fr 7fr 4fr;
+    height: 10vw;
+    min-height: 10vw;
+    border-bottom: solid gray 0.1px;
+    margin-top:3vw;
+}
+#top img{
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 100%;
+    object-fit: contain;
+}
+#top input{
+    display: 60%;
+    width: 95%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    text-align: center;
+    background-color: rgb(250,250,250);
+
+    border: solid gray 1px;
+    border-radius: 3px;
+
+    font-size: 3vw;
+    font-weight: 100;
+}
+i{
+    color:gray;
+}
+#top i{
+    font-size: 4vw;
+}
+#top div{
+    text-align:center;
+    padding-top:3vw;
+}
+#sub_icons{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    text-align: center;
+    font-size: 15px;
+
+    height: 30px;
+}
+
+.selected{
+    border-bottom: solid gray 3px;
 }

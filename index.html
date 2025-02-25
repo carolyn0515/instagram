@@ -1,70 +1,108 @@
 <html>
     <head>
-        <link href="style.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     </head>
     <body>
-        <div>
+    <!-- Logo & Search -->
+        <div id="top">
             <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"/>
-            <input type="search" value="검색"/>
+            <input type="search" value="🔍검색"/>
+            <div>
+                <i class="fa-solid fa-house-chimney"></i>
+                <i class="fa-solid fa-paper-plane"></i>
+                <i class="fa-regular fa-compass"></i>
+                <i class="fa-regular fa-heart"></i>
+            </div>
         </div>
+    <!-- Profile -->
         <div id = "profile">
-            <img src="image/profile.jpg" width="50px"/>
-            <div>
-                <h2>carolyn</h2>
-                <button>profile edit</button>
+            <div class = "profile_pic">
+                <img class="circle_pic" src="image/profile.jpg" width="50px"/>
+            </div>
+            <div class = "profile_info">
+                <div id="id">
+                    nakyung515
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+                <button class = "my-button">프로필 편집</button>
             </div>
         </div>
+    <!-- Highlight -->
         <p>
-        <b>Carolyn Kim<br/></b>
-        Student<br/>
-        </p>
-        <p>
-            <a href="https://github.com/carolyn0515/instagram"> carolyn0515.github.io</a></p>
-        <p>
-        <div>
-            <div>
-                <div class = "highlight">
-                    <div>
-                        <img src="image/hl1.jpeg" height="35px"/>
-                    </div>
-                    <div>
-                        🦄
-                    </div>
+            <strong>Carolyn Kim</strong>
+                <br/>Student
+            </p>
+            <p>
+                <a href="https://github.com/carolyn0515/instagram"> carolyn0515.github.io
+                </a>
+            </p>
+        <div id="highlight_area">
+            <div class = "highlight">
+                <div class = "highlight_pic">
+                    <img class="circle_pic" src="image/hl1.jpeg"/>
                 </div>
-                <div class="highlight">
-                    <div>
-                        <img src="image/hl2.jpeg" height="35px"/>
-                    </div>
-                    <div>
-                        👽
-                    </div>
+                <div>
+                    🦄
                 </div>
             </div>
-            <div>
-            <div>
+            <div class="highlight">
+                <div class = "highlight_pic">
+                    <img class="circle_pic" src="image/hl2.jpeg"/>
+                </div>
+                <div>
+                    👽
+                </div>
+            </div>
+            <div></div>
+        </div>
+        <div id="stat_bar">
+            <div class="stat">
                 게시물<br/>
                 133
             </div>
-            <div>
+            <div class="stat">
                 follower<br/>
                 308
             </div>
-            <div>
-                following<br/>
+            <div class="stat">
+                follow<br/>
                 133
             </div>
         </div>
-        <div>icon place</div>
+        <div id="sub_icons">
+            <div class="selected">
+                <i class="fa-solid fa-border-all"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-film"></i>
+            </div>
+            <div>
+                <i class="fa-regular fa-circle-play"></i>
+            </div>
+            <div>
+                <i class="fa-regular fa-bookmark"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-user-tag"></i>
+            </div>
+        </div>
         <div>
-            <img src="image/1.jpeg" width="32%">
-            <img src="image/2.jpeg" width="32%">
-            <img src="image/3.jpeg" width="32%">
-            <img src="image/4.jpeg" width="32%">
-            <img src="image/5.jpeg" width="32%">
-            <img src="image/6.jpeg" width="32%">
-            <img src="image/7.jpeg" width="32%">
-            <img src="image/hl1.jpeg" width="32%">
-            <img src="image/hl2.jpeg" width="32%">
+            <div class="thumbnail_gird">    
+                <img src="image/1.jpeg" class="thumbnail"/>
+                <img src="image/2.jpeg" class="thumbnail"/>
+                <img src="image/3.jpeg" class="thumbnail"/>
+            </div>
+            <div class="thumbnail_gird">
+                <img src="image/4.jpeg" class="thumbnail"/>
+                <img src="image/5.jpeg" class="thumbnail"/>
+                <img src="image/6.jpeg" class="thumbnail"/>
+            </div>
+            <div class="thumbnail_gird">
+                <img src="image/7.jpeg" class="thumbnail"/>
+                <img src="image/hl1.jpeg" class="thumbnail"/>
+                <img src="image/hl2.jpeg" class="thumbnail"/>
+            </div>
         </div>
     </body>
 </html>
